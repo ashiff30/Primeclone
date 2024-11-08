@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;  
+}
+
+body{
+    background-color: #131a22;
+}
+
+header {
+    background-color: #131a22;
+    color: #ffffff;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    align-content: center;
+    border-radius: 20px;
+    margin-left: 75px;
+}
+
+#logo{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+}
+
+nav ul li{
+    margin-right: 1rem; 
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(186, 177, 177);
+    padding: 0.5rem;
+    font-size: 19px;
+}
+
+#search{
+    display: flex;
+    align-items: center;
+}
+
+#search input{
+    padding: 0.5rem;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    background-color: transparent;
+    border: none;
+    color: rgb(152, 143, 143);
+}
+
+
+#search button {
+    background-color: transparent;
+    color: #a29898;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-left: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#search a{
+    color: white;
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+nav ul li ul{
+    position: absolute;
+    display: block;
+    background-color: #131a22;
+}
+
+nav ul li ul li a{
+    display: none;
+    color: grey;
+}
+
+nav ul li:hover > ul li a{
+    display: block;
+    background-color:#131a22;
+}
+
+nav ul li ul li a:hover{
+    background-color: whitesmoke;
+    color: #131a22;
+}
+
+.profile{
+    position: absolute;
+    right: 5px;
+    top: 10px;
+}
+
+.profile ul {
+    list-style: none;
+}
+
+.profile ul li a{
+    color: rgb(157, 152, 152);
+    font-size: 1.5rem;
+
+}
+
+.profile ul li ul li a{
+    display: none;
+}
+
+.profile ul li:hover > ul li a{
+    display: block;
+    background-color: #131a22;
+    font-size: 20px;
+}
+
+.profile ul li ul li a:hover{
+    background-color: whitesmoke;
+    color: #131a22;
+}
+
+
+.scroll-container1 {
+    overflow-x: auto; 
+    white-space: nowrap; 
+    -webkit-overflow-scrolling: touch; 
+    background-color: #f0f0f0; 
+    margin: 50px;
+    overflow-y: hidden;
+    border-radius: 10px;
+}
+
+.scroll-content {
+    display: flex; /* Use flexbox for the layout */
+    width: fit-content; /* Adjust width to fit content size */
+}
+
+.image-with-text {
+    position: relative; /* Ensure positioning context for text overlay */
+    width: 100vw; /* Width of the viewport */
+    height: 400px; /* Height of the container */
+}
+
+.image-with-text img {
+    width: 100%; /* Ensure the image fills its container */
+    height: 100%; /* Maintain aspect ratio */
+    object-fit:cover; /* Cover the container with the image */
+    margin-right: 2px;
+}
+
+.text-overlay {
+    position: absolute; /* Position text relative to parent */
+    top: 0px; /* Adjust vertical position */
+    left: 0px; /* Adjust horizontal position */
+    color: white; /* Text color */
+    font-size: 18px; /* Font size */
+    font-weight: bold; 
+    background: linear-gradient(to right, black, rgba(255, 255, 255, 0)); 
+    height: 500px;
+    padding: 5px 10px; 
+   
+}
+
+
+.rent{
+    margin-top: 30px;
+}
+
+.rent button{
+    padding: 1rem;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.2rem;
+    background-color: whitesmoke;
+}
+
+.rent span{
+    background-color: grey;
+    margin-left: 5px;
+}
+
+.rent i{
+    color: yellow;
+    margin-right: 10px;
+} 
+
+
+
+
+.container {
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: yellow;
+    margin-left: 40px;
+}
+
+.scroll-container {
+    display: flex;
+    overflow-x: hidden;
+    padding: 10px;
+    background-color: #131a22;
+}
+
+.card {
+    background-color: #312e2e;
+    border-radius: 10px;
+    margin-right: 10px;
+    min-width: 200px;
+    flex: 0 0 auto;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    display: block;
+}
+
+.card p {
+    background-color: rgba(7, 7, 7, 0.915);
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-left: 0;
+    color: yellow;
+}
+
+.card i{
+    margin-right: 5px;
+}
+
+.scroll-container :hover{
+    transition: 1ms ease-in;
+    transform: scale(1.02);
+}
+
+footer{
+    background-color: #131a22;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+footer h4,p{
+    margin-top: 25px;
+    color: rgb(137, 128, 128);
+}
+
+footer h4{
+    margin-bottom: 20px;
+}
+
+footer a{
+    text-decoration: none;
+    color: #39b0d1;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+footer img{
+    height: 30px;
+    margin: 15px 20px;
+    background: transparent;
+}
